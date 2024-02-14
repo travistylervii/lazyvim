@@ -59,14 +59,5 @@ return {
         sorting = defaults.sorting,
       }
     end,
-
-    --  config = function()
-    --    local cmp = require("cmp")
-    --    cmp.setup({
-    --      completion = {
-    --        autocomplete = false,
-    --      },
-    --    })
-    --  end,
   },
 }
