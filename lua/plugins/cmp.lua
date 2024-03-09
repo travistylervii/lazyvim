@@ -8,7 +8,7 @@ return {
     init = function()
       local keys = require("lazyvim.plugins.lsp.keymaps").get()
       -- change a keymap
-      --keys[#keys + 1] = { "K", "<cmd>echo 'hello'<cr>" }
+      keys[#keys + 1] = { "gi", "<cmd>lua vim.lsp.buf.hover()<CR>" }
       -- disable a keymap
       keys[#keys + 1] = { "K", false }
       -- add a keymap

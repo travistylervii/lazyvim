@@ -3,6 +3,9 @@
 -- Add any additional keymaps hereby--
 -- vim.keymap.del("n", "<leader>u")
 
+vim.keymap.set("n", "<leader>j", function()
+  vim.cmd("join")
+end, { desc = "Join lines" })
 vim.keymap.set({ "n", "v" }, "J", "10j")
 vim.keymap.set({ "n", "v" }, "K", "10k", { remap = true, silent = true })
 vim.keymap.set({ "n", "v" }, "H", "10h")
